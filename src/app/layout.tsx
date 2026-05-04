@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScrollProvider from "@/components/ui/SmoothScrollProvider";
 
 export const metadata: Metadata = {
@@ -69,9 +68,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-obsidian text-white antialiased" style={{ cursor: "none" }}>
+      <body className="bg-obsidian text-white antialiased">
         <SmoothScrollProvider>
-          <CustomCursor />
           {children}
         </SmoothScrollProvider>
       </body>
